@@ -1,0 +1,9 @@
+<p>listsong works!</p>
+
+<br>
+<ul>
+  <li *ngFor="let song of songscomponent">
+    <a [routerLink]="['/play',song.id]">{{song.name}}</a>
+  </li>
+</ul>
+
